@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Overpass', sans-serif;
+}
+body{
+    background-color: var(--Very-Dark-Blue);
+    font-size: 1.5rem;
+}
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-item{
+    background-color: var(--Dark-Blue);
+    height: 350px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+}
+.star-container{
+    background-color: var(--Medium-Grey);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-container{
+    margin-top: 15px;
+}
+.info-container p:nth-child(1){
+    color: var(--White);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.info-container p:nth-child(2){
+    color: var(--Light-Grey);
+    font-weight: 400; 
+    margin-top: 15px;
+}
+.rate-container{
+    font-size: 1.8rem;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rate-container label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--Medium-Grey);
+    border-radius: 50%;
+}
+input[type="checkbox"]{
+    visibility: hidden;
+}
+#check_1:checked + label{
+    background-color: var(--Orange);
+}
+#check_2:checked + label{
+    background-color: var(--Orange);
+}
+#check_3:checked + label{
+    background-color: var(--Orange);
+}
+#check_4:checked + label{
+    background-color: var(--Orange);
+}
+#check_5:checked + label{
+    background-color: var(--Orange);
+}
+input[type="submit"]{
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: 0;
+    background-color: var(--Orange);
+    color: var(--White);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+input[type="submit"]:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}

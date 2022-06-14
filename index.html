@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rating menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="main-container">
+      <div class="main-item">
+        <div class="star-container">
+            <img src="./assets/icon-star.svg" alt="" />
+          </div>
+          <div class="info-container">
+            <p>How did we do?</p>
+            <p>
+              Please let us know we did with your support request. All feedback is
+              appreciated to help us improve our offering!
+            </p>
+          </div>
+          <div class="rate-container">
+            <form action="./thank-you.html" method="get" onsubmit="rating()">
+              <div class="check_1">
+                <input type="checkbox" name="check_1" id="check_1" value="1">
+                <label for="check_1">1</label>
+              </div>
+              <div class="check_2">
+                <input type="checkbox" name="check_2" id="check_2">
+                <label for="check_2">2</label>
+              </div>
+              <div class="check_3">
+                <input type="checkbox" name="check_3" id="check_3">
+                <label for="check_3">3</label>
+              </div>
+              <div class="check_4">
+                <input type="checkbox" name="check_4" id="check_4">
+                <label for="check_4">4</label>
+              </div>
+              <div class="check_5">
+                <input type="checkbox" name="check_5" id="check_5" value="5">
+                <label for="check_5">5</label>
+              </div>
+              <input type="submit" value="SUBMIT"/>
+            </form>
+          </div>
+      </div>
+    </section>
+  </body>
+  <script src="./main.js"></script>
+</html>
